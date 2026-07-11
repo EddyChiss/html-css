@@ -1,0 +1,44 @@
+@charset "UTF-8";
+
+body{
+  font-family: Consolas;
+  background-color: #0A1220;
+}
+main{
+  background-color: #102A44;
+  width: 300px;
+  height: 250px;
+  margin:auto;
+  padding: 10px;
+  border-radius:10px;
+}
+h1{
+  color:white;
+  text-align: center;
+}
+input{
+  display: block;
+  margin: auto;
+  padding: 10px;
+  border-radius:5px;
+  margin-top: 5px;
+}
+#btn{
+  display: block;
+  width: 208px;
+  background-color: #56CCF2;
+  margin: auto;
+  margin-top:5px;
+}
+table{
+  margin: auto;
+  margin-top: 20px;
+  width: 300px;
+  border-collapse: collapse;
+  
+}
+td{
+  color: rgb(168, 168, 168);
+  border: 1px solid #102A44;
+  padding: 5px 10px;
+}

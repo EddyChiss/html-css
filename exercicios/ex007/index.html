@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="shortcut icon" href="../fav/favicon.ico" type="image/x-icon">
+        <link rel="stylesheet" href="../ex006/estilo.css">
+        <title>Imagens dinámicas</title>
+    </head>
+    <body>
+        <h1>Imagens dinámicas</h1>
+        <p>As imagens dinámicas são aquelas em que se adaptam em dispositivos de tamanhos diferentes.</p>
+        <picture>
+            <source media="(max-width:750px )" srcset="imagens/imagem_pequena.png" type="image/png">
+            <source media="(max-width:1050px )" srcset="imagens/imagem_media.png" type="image/png">
+            <img src="imagens/imagem_grande3.png" alt="">
+        </picture>
+    </body>
+</html>

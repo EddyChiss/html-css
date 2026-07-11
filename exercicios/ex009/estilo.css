@@ -1,0 +1,32 @@
+@charset "UTF-8";
+@font-face {
+    font-family: "sky";
+    src: url("../fonts/skynight/Skynight.otf") format("opentype");
+}
+*{
+text-align: justify;
+font: normal normal 1em sky, arial, helvetica, sans-serif;
+color: #9ca3aF;
+}
+h1{
+    font-size: 2em;
+    color: white;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 1px 1px 3px rgba(189, 141, 141, 0.856);
+}
+h2{
+    color:#D1D5DB;
+}
+body{
+    background-image:linear-gradient(to left, #0A1220, #102a44);
+}
+
+main{
+    background-color: #102a44;
+    width: 50%;
+    margin: auto;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 5px 5px 15px #19142c;
+}

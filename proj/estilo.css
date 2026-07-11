@@ -1,0 +1,44 @@
+@charset "UTF-8"; 
+/*
+ Cores:
+
+Fundo principal: #0A1220
+Fundo Secundário: #102A44
+
+Cor primária: #2F80ED
+Cor de destaque: #56CCF2
+
+Texto principal: #FFFFFF
+Texto secundário: #D1D2DB
+Texto fraco: #9CA3AF
+
+*/
+
+body{
+    font: normal normal 16px serif;
+    color: #9CA3AF;
+    background-color: #0A1220;
+}
+header{
+    color: #FFFFFF;
+}
+main{
+    background-color: #102A44;
+    margin: auto;
+    width: 500px;
+    height: 230px;
+    padding: 10px;
+    /*margin: 10px;*/
+    border-radius: 10px;
+
+}
+
+#nome{
+    width: 80px;
+}
+#idade{
+    width: 80px;
+}
+#profissao{
+    width: 80px;
+}

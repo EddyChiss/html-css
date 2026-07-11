@@ -1,0 +1,49 @@
+@charset "UTF-8";
+/*
+Cores:
+
+Fundo principal: #0A1220
+Fundo Secundário: #102A44
+
+Cor primária: #2F80ED
+Cor de destaque: #56CCF2
+
+Texto principal: #FFFFFF
+Texto secundário: #D1D2DB
+Texto fraco: #9CA3AF
+*/
+
+body{
+    font: normal normal 1em sans-serif;
+    background-image:linear-gradient(to bottom,
+     #0e182b,#0a1220, #05090f);
+}
+main{
+    background-color: #102A44;
+    width: 450px;
+    padding: 10px;
+    margin: auto;
+    margin-top: 60px;
+    border-radius: 5px;
+}
+#titulo{
+    font: normal bolder 1.8em sans-serif;
+    color:#FFFFFF;
+}
+.texto{
+    display:block;
+    width: 423px;
+    margin: auto;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 3px;
+}
+#btn{
+    background-color: #56CCF2;
+    display:block;
+    width: 436px;
+    margin: auto;
+    margin-top: 5px;
+    padding: 5px;
+    border-radius: 3px;
+}

@@ -1,0 +1,69 @@
+@charset "UTF-8";
+* {
+	margin: 0px;
+	border: 0px;
+	padding: 0px;
+}
+body{
+	font: normal normal 16px  Helvetica, times, sans-serif;
+	background-color: #0A1220;
+	color:#B1B5BD ;
+}
+header{
+	background-color: #111044;
+}
+header > h1{
+	color: #ffffff;
+	padding: 20px;
+	text-align: center;
+}
+main{
+	background-color: #102a44;
+	text-align: justify;
+	min-height: calc(100vh - 80px);
+	margin: 10px;
+	width: 95%;
+	border-radius: 10px;
+}
+section{
+	padding: 10px;
+}
+main > article > section > p {
+	margin: 10px;
+}
+p#NOME{
+	margin-top: 30px;
+}
+input{
+	background-color: #56CCF2;
+	border-radius: 5px;
+	height: 40px;
+	padding: 2px;
+}
+input[type="button"]{
+	color: #FFFFFF;
+}
+input[type="Number"]::placeholder{
+	text-align: center;
+}
+#chat{
+	display: flex;
+	flex-direction: column;
+	gap: 10px;
+	padding: 10px;
+}
+.mensagem{
+	max-width: 70%;
+	padding: 10px;
+	border-radius: 10px;
+}
+.usuario{
+	align-self: flex-end;
+	background-color: #56CCF2;
+	color: black;
+}
+.sistema{
+	align-self: flex-start;
+	background-color: #2D3748;
+	color: white;
+}

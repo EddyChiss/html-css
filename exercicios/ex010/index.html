@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../fav/favicon.ico" type="image/x-icon">
+    <title>Pseudo-classes</title>
+    <style>
+        @font-face {
+            font-family: "roboto";
+            src: url("../fonts/roboto/Roboto-Italic-VariableFont_wdth\,wght.ttf") format("truetype");
+        } 
+        body{
+            font-family: "roboto";
+        }
+        div{
+            background-color: darkgray;
+            text-align: center;
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+            display: inline-block;
+        }
+        div#pri:hover{
+            background-color: rgb(0, 255, 0);
+        }
+        div#sec:hover{
+            background-color: rgb(255, 0, 0);
+        }
+        div#ter:hover{
+            background-color: rgb(179, 0, 255);
+        }
+        p:hover{
+            color: rgb(255, 192, 245);
+        }
+        p > a#gun {
+            display: none;
+        }
+        p:hover > a#gun {
+            display: inline;
+            color: blue;
+            width: 200px;
+        }
+        a {
+            color:rgb(64, 120, 224);
+            text-decoration: none;
+        }
+        a:active{
+            color:rgba(4, 90, 57, 0.747);
+        }
+        a:visited{
+            color:blueviolet;
+        }
+        a:hover {
+            text-decoration:underline;
+        }
+    </style>
+</head>
+<body>
+    <div id="pri">01</div>
+    <div id="sec">02</div>
+    <div id="ter">03</div>
+    <p>
+        Passe o mouse aqui
+        <br>
+        <a id="gun"> Seja bem-vindo</a>
+        <br>
+        <a > a festa!</a>
+    </p>
+    <ul>
+        <li><a href="#">curso em video</a></li>
+        <li><a href="#">Aprender python</a></li>
+        <li><a href="#">Comidas favoritas</a></li>
+    </ul>
+</body>
+</html>
