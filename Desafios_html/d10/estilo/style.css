@@ -145,7 +145,7 @@ aside h3{
   margin: -20px -20px 20px -20px;
   text-shadow:  3px 3px 5px black;
 }
-
+/*@media (min-width: 540px){}*/
 aside ul {
   color:#56cbf28c;
   padding: -20px;
@@ -153,8 +153,10 @@ aside ul {
 }
 
 aside li{
-  margin: 0px 10px;
-  padding: 10px
+  font-size: 0.9em;
+  margin-left: -20px;
+  margin-right: 10px;
+  padding: 3px;
 }
 
 footer p{
