@@ -23,6 +23,7 @@ main{
     margin: auto;
     margin-top: 60px;
     border-radius: 5px;
+    height: 200px;
 }
 
 main h1 {
@@ -32,9 +33,51 @@ main h1 {
     margin: auto;
     max-width: 450px;
     min-width: 50px;
+    text-shadow: 3px 2px 6px black;
 }
 
 div{
     margin: auto;
     min-width: 50px;
     max-width: 420px;
+    margin-top: 30px;
+}
+div input{
+    display: block;
+    width: 100%;
+    padding: 3px;
+    margin: auto;
+    margin-top: 3px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 6px 0px black;
+}
+/*JANELA 350px*/
+@media (min-width: 350px){   
+    div input#btn{
+        background-color: var(--cor_de_destaque);
+        width: 103.5%;
+        margin: auto;
+        padding: 3px;
+        margin-top: 3px;
+    }
+}
+/*JANELA 500px*/
+@media (min-width: 500px){   
+    div input#btn{
+        background-color: var(--cor_de_destaque);
+        width: 102.5%;
+        margin: auto;
+        padding: 3px;
+        margin-top: 3px;
+    }
+}
+/*JANELA 1200px*/
+@media (min-width: 350px){   
+    div input#btn{
+        background-color: var(--cor_de_destaque);
+        width: 102.7%;
+        margin: auto;
+        padding: 3px;
+        margin-top: 3px;
+    }
+}
