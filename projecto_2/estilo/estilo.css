@@ -1,49 +1,40 @@
 @charset "UTF-8";
-/*
-Cores:
-
-Fundo principal: #0A1220
-Fundo Secundário: #102A44
-
-Cor primária: #2F80ED
-Cor de destaque: #56CCF2
-
-Texto principal: #FFFFFF
-Texto secundário: #D1D2DB
-Texto fraco: #9CA3AF
-*/
+:root{
+    --cor_Fundo_principal: #0A1220;
+    --cor_Fundo_Secundário: #102A44;
+    --cor_primária: #2F80ED;
+    --cor_de_destaque: #56CCF2;
+    --cor_Texto_principal: #FFFFFF;
+    --cor_Texto_secundário: #D1D2DB;
+    --cor_Texto_fraco: #9CA3AF;
+}
 
 body{
     font: normal normal 1em sans-serif;
     background-image:linear-gradient(to bottom,
      #0e182b,#0a1220, #05090f);
 }
+
 main{
-    background-color: #102A44;
-    width: 450px;
+    background-color: var(--cor_Fundo_Secundário);
+    max-width: 450px;
+    min-width: 50px;
     padding: 10px;
     margin: auto;
     margin-top: 60px;
     border-radius: 5px;
 }
-#titulo{
+
+main h1 {
     font: normal bolder 1.8em sans-serif;
-    color:#FFFFFF;
-}
-.texto{
-    display:block;
-    width: 423px;
+    color: var(--cor_Texto_principal);
+    text-align: center;
     margin: auto;
-    margin-top: 5px;
-    padding: 5px;
-    border-radius: 3px;
+    max-width: 450px;
+    min-width: 50px;
 }
-#btn{
-    background-color: #56CCF2;
-    display:block;
-    width: 436px;
+
+div{
     margin: auto;
-    margin-top: 5px;
-    padding: 5px;
-    border-radius: 3px;
-}
+    min-width: 50px;
+    max-width: 420px;
