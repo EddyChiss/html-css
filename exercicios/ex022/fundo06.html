@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Centralização de fundo</title>
+    <style>
+        body{
+            background-color: slategrey;
+        }
+        #conteiner{
+            height: 97vh;
+            background-color:teal;
+            
+            
+            position: relative;
+        }
+        #conteudo{
+            background-color: yellow;
+            width: 300px;
+            height: 100px;
+            position: absolute;
+            left:50%;
+            top:50%;
+            transform: translate(-50%, -50%)
+        }
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <div id="conteudo">
+
+        </div>
+    </div>
+
+</body>
+</html>

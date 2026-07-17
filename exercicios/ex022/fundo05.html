@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Posicionamento de fundo</title>
+    <style>
+        :root{
+            --cor_fundo1: #0A1220;
+            --cor_fundo2: #102A44;
+            --cor_texto3: #9CA3AF;
+        }
+        body{
+
+            /*
+            background-color: var(--cor_fundo1);
+            background-image: url("../img/wallpaper002.jpg");
+            background-position: center center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment: fixed;*/
+
+            /*
+            shorthand: color > image > position > repeat > [size]attachment;                                         
+            */
+            height:100vp;
+            background: var(--cor_fundo1) url("../img/wallpaper002.jpg") center center no-repeat fixed;
+            background-size: cover ;
+        }
+        main{
+            background-color: var(--cor_fundo2);
+            min-width: 100px;
+            max-width: 400px;
+            padding: 30px;
+            margin: auto;
+            border: 1px solid black;
+            border-radius: 5px;
+        }
+        h1{
+            color: white;
+        }
+        p{
+            color:var(--cor_texto3);
+            text-align: justify;
+            text-indent: 15px;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <h1>Teste de posicionamento do fundo</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed corrupti consectetur blanditiis, qui omnis iure, quam aliquid fuga optio sint facilis quo, ducimus explicabo. Ea, velit quod? Voluptatum, qui harum. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nobis tempora assumenda fuga amet impedit consequuntur eum, similique iure aut tempore, necessitatibus voluptas corporis! Laudantium praesentium provident ex consequatur accusantium corrupti!
+        </p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi quam praesentium totam, provident, blanditiis illo necessitatibus voluptatem dolorum atque sequi quos id? Iste, dolorem. Quod sint veniam dolor possimus dolorum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsam rerum, sapiente distinctio blanditiis voluptatum iusto maiores alias sunt. Voluptates explicabo ab magni dolore atque sint aspernatur blanditiis fuga, beatae eos.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, tempora quidem, beatae rem modi corrupti pariatur odio iusto magni laboriosam, enim impedit. Vero alias a asperiores distinctio, repellendus delectus libero?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem fugit hic cumque rem aliquam delectus nam voluptatibus dicta exercitationem. Dicta accusamus dolores officia itaque debitis obcaecati beatae illo excepturi nobis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dicta culpa iste ex voluptatum consectetur numquam tenetur! Aliquam laudantium, beatae porro unde, doloribus distinctio atque molestias quae error asperiores minima.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id labore similique dolor. Amet architecto sequi, nemo impedit possimus obcaecati omnis quo animi, reiciendis aperiam qui quidem tenetur? Sapiente, soluta laborum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quo ad explicabo quidem necessitatibus corrupti quibusdam possimus, fuga autem exercitationem, iure facilis! Aspernatur voluptatibus voluptas amet quos, recusandae architecto voluptatem!Lorem</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus, tempora quidem, beatae rem modi corrupti pariatur odio iusto magni laboriosam, enim impedit. Vero alias a asperiores distinctio, repellendus delectus libero?Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem fugit hic cumque rem aliquam delectus nam voluptatibus dicta exercitationem. Dicta accusamus dolores officia itaque debitis obcaecati beatae illo excepturi nobis?Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse dicta culpa iste ex voluptatum consectetur numquam tenetur! Aliquam laudantium, beatae porro unde, doloribus distinctio atque molestias quae error asperiores minima.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id labore similique dolor. Amet architecto sequi, nemo impedit possimus obcaecati omnis quo animi, reiciendis aperiam qui quidem tenetur? Sapiente, soluta laborum?</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit quo ad explicabo quidem necessitatibus corrupti quibusdam possimus, fuga autem exercitationem, iure facilis! Aspernatur voluptatibus voluptas amet quos, recusandae architecto voluptatem!Lorem</p>
+    </main>
+</body>
+</html>
