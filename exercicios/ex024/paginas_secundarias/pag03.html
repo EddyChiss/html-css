@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEXTE 3</title>
+
+    <style>
+    #vazio{
+            border: none;
+        }
+
+        table{
+            border-collapse: collapse  ;
+            width:300px;
+        }
+
+        td, th{
+            border: 1px solid black;
+        }
+    </style>
+
+</head>
+<body>
+    <main>
+        <table>
+            <thead>
+                <tr>
+                    <td id="vazio"></td>
+                    <th>Nome</th>
+                    <th>Idade</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th rowspan="3">Homens</th>
+                    <td>Antony</td>
+                    <td>20</td>
+                </tr>
+                <tr>
+                    <td>Benson</td>
+                    <td>35</td>
+                </tr>
+                <tr>
+                    <td>Clarence</td>
+                    <td>13</td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        Média de idade dos Homens
+                    </th>
+                    <td>22.6</td>
+                
+                </tr>
+                <tr>
+                    <th rowspan="3">Mulheres</th>
+                    <td>Alice</td>
+                    <td>28</td>
+                </tr>
+                <tr>
+                    <td>Rochelle</td>
+                    <td>59</td>
+                </tr>
+                <tr>
+                    <td>Zendaya</td>
+                    <td>30</td>
+                </tr>
+                <tr>
+                    <th colspan="2">
+                        Média de idade dos Mulheres
+                    </th>
+                    <td>39</td>
+                </tr>
+            </tbody>
+            <tfoot></tfoot>
+        </table>
+    </main>
+</body>
+</html>

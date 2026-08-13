@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        :root{
+            --cor_fundo1: #0A1220;
+            --cor_fundo2: #102A44;
+            --cor_primária: #2F80ED;
+            --cor_destaque: #56CCF2;
+            --cor_texto1: #FFFFFF;
+            --cor_texto2: #D1D2DB;
+            --cor_texto3: #9CA3AF;
+        }
+
+        body{
+            background-color: var(--cor_fundo1);
+            font: normal normal 1em arial, sans-serif;
+            text-align: justify;
+        }
+
+        main{
+            background-color: var(--cor_fundo2);
+            border-radius: 10px;
+            padding: 20px;            
+            max-width: 700px;
+            min-width: 100px;
+            margin: auto; 
+        
+        }
+
+        h1{
+            color: white;
+            text-align: center;
+            text-shadow: 4px 3px 6px black;
+        }
+
+        p{
+            color: var(--cor_texto3);
+            text-indent: 20px;
+        }
+
+        a{
+            color:var(--cor_destaque);
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: var(--cor_primária);
+            text-decoration: underline;
+        }
+
+        /*
+        a:visited{
+            color: rgba(0, 0, 0, 0.305);
+        }
+        */
+
+        iframe{
+            background-color: #ffffff9f;
+            border: 1px solid black;
+            border-radius: 5px;
+
+            display: block;
+            height: 360px;
+            width: 90%;
+            
+            margin: auto;
+        }
+    </style>
+    <title>iframe</title>
+</head>
+<body>
+    <main>
+        <h1>iframes em HTML5 e CSS3</h1>
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium officiis neque beatae facilis repellat impedit deleniti quasi unde, porro totam eligendi modi? Tenetur possimus accusamus a quasi rerum enim veniam?
+        </p>
+        <ul>
+            <li><a href="paginas_secundarias/pag01.html" target="frame_tela">Site 01</a></li>
+            <li><a href="paginas_secundarias/pag02.html" target="frame_tela">Site 02</a></li>
+            <li><a href="paginas_secundarias/pag03.html" target="frame_tela">Site 03</a></li>
+        </ul>
+        <iframe src="" frameborder="1" name="frame_tela">
+            <p>
+                iframe não são compatíveis com seu navegador ou dispositivo
+            </p>
+        </iframe>
+        <p style="display: none;">
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusantium officiis neque beatae facilis repellat impedit deleniti quasi unde, porro totam eligendi modi? Tenetur possimus accusamus a quasi rerum enim veniam?
+        </p>
+    </main>
+
+</body>
+</html>
