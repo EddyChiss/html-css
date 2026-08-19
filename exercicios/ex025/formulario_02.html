@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMULÁRIO</title>
+</head>
+<body>
+    <h1>Exemplo de formulário 2</h1>
+    <h2>number, data, time, </h2>
+    <form action="form.php" method="post">
+        <label for="data">
+            <p>
+                Data:
+                <input type="date" name="data" id="data" autocomplete="bday">
+            </p>
+        </label>
+        <label for="mes">
+            <p>
+                MÊS:
+                <input type="month" name="mes" id="mes">
+            </p>
+        </label>
+        <label for="numero">
+            <p>
+                Número:
+                <input type="number" name="numero" id="numero" min="0" max="100" required step="0.1">
+            </p>
+            <input type="submit" value="enviar">
+        </label>
+    </form>
+</body>
+</html>
