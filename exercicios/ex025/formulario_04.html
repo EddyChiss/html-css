@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt--br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Formulários</title>
+</head>
+<body>
+    <form>
+        <input type="color" name="cor" id="cor" onchange="mudar()" value="#FFFFFF">
+
+
+      
+        <input type="range" name="sat" id="sat" min="1" max="5" value="3" onchange="mudar">
+        
+        <br><p id="nome" style="display: inline-block;"></p>
+    </form>
+    <script>
+        fundo = document.querySelector("body");
+        fundo2 = document.querySelector("body");
+        cor = document.querySelector("#cor");
+        nivel = document.querySelector("#sat");
+        p = document.querySelector("#nome")
+        function mudar(){
+            fundo.style.background = cor.value;
+            fundo2.style.font = "Arial";
+            if (cor.value == "#000000") {
+                fundo.style.color= "#FFFFFF"
+            }
+            else {
+                fundo.style.color= "#000000"
+            }
+            p.innerHTML= `Código da cor é: ${cor.value} <br>Nível de satisfação é ${nivel.number}`
+        }
+    </script>
+</body>
+</html>
