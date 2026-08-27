@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Elemento output</title>
+    <style>
+
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 1em;
+            padding: 0px;
+            margin: 0px;
+        }
+        #caixa{
+            padding: 2em;
+            user-select: none;
+        }
+
+        .campo{
+            margin-bottom: 2em;
+            position: relative;
+        }
+        h1{
+            margin-bottom: 1em;
+        }
+
+        label{
+            color:#2f2d2d;
+            font-size: 1em;
+            padding: 0.3em 0em;
+            position:absolute;
+            top: 0;
+            
+            
+        }
+
+        input{
+            border: none;
+            border-bottom: 1px solid black;
+            display: block;
+            font-size: 1em;
+            padding: 5px ;
+            outline: none;
+        }
+
+        label:has(+ input:focus),
+        label:has(+ input:not(:placeholder-shown)){
+            position: absolute;
+            top: -2em;
+            font-size: 0.89em;
+            transition: 0.25s;
+            color: #7c7777;
+        }
+        input:focus{
+        border-color: blueviolet;
+        }
+        
+    </style>
+</head>
+<body>
+    
+    <div id="caixa">
+    <h1>Formulário</h1>    
+        <div class="campo">
+            <label for="num1">Digite um número</label>
+            <input type="number" id="num1" placeholder=" " oninput="calcular()">
+        </div>
+        <div class="campo">
+            <label for="num2">Digite um número</label>
+            <input type="number" id="num2" placeholder=" " oninput="calcular()">
+        </div>
+        <output id="saida"></output>
+    </div>
+    <script>
+        var n1 = document.querySelector("#num1");
+        var n2 = document.querySelector("#num2");
+        var res = document.querySelector("#saida")
+        function calcular(){
+            var soma = Number(n1.value) + Number(n2.value);
+            res.innerHTML= `A soma é igual a ${soma}`;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+    select{
+        padding:5px;
+    }
+    textarea{
+        resize: none;
+        outline: none;
+    }
+    </style>
+</head>
+<body>
+    <form>
+        <h2>Lista não adicionável</h2>
+        <label for="províncias">Província</label>
+        <select name="províncias" id="províncias">
+            <optgroup label="REGIÃO NORTE">
+                <option value="CA">Cabo-Delgado</option>
+                <option value="NS">Niassa</option>
+                <option value="NP">Nampula</option>
+            </optgroup>
+            <optgroup label="REGIÃO CENTRO">
+                <option value="ZB">Zambézia</option>
+                <option value="TT">Tete</option>
+                <option value="MN">Manica</option>
+                <option value="SF">Sofala</option>
+            </optgroup>
+            <optgroup label="REGIÃO SUL">
+                <option value="IB">Inhambane</option>
+                <option value="GZ">Gaza</option>
+                <option value="MP" selected>Maputo</option>
+            </optgroup>
+        </select>
+
+        <h2>Lista adicionável</h2>
+        <label for="lista">Profissão</label> 
+        <input type="text" name="lista"  list="lista">
+        <datalist id="lista">
+            <option>Contabilista</option>
+            <option>Economista</option>
+            <option>Gestor de Recursos Humanos</option>
+            <option>professor</option>
+        </datalist>
+        <h2>Área de texto</h2>
+        <textarea name="cmt" id="cmt" cols="40" rows="10"></textarea>
+    </form>
+</body>
+</html>
