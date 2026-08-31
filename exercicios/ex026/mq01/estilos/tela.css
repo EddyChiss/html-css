@@ -16,6 +16,41 @@ body{
     text-align: justify;
     background-color: var(--cor_fundo1);
 }
+
+h1{
+    color: var(--cor_texto1);
+    text-align: center;
+}
+
+menu{
+    margin: auto;
+    margin-bottom: 1em;
+    max-width: 562px;
+    padding: 1em 0em;
+    user-select:none ;
+}
+
+nav{
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+header a{
+    
+    color: var(--cor_destaque);
+    border-radius: 0.5em;
+    padding: 10px;
+    text-decoration: none;
+    text-align: center;
+}
+header a:hover{
+    background-color: #111d33;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
 main{
     background-color: var(--cor_fundo2);
     border-radius: 0em 0em 0.5em 0.5em;
@@ -23,10 +58,7 @@ main{
     max-width: 500px;
     padding: 1em 2em ;
 }
-h1{
-    color: var(--cor_texto1);
-    text-align: center;
-}
+
 h2{
     color: var(--cor_texto2);
 }
@@ -34,19 +66,22 @@ p{
     color:var(--cor_texto3);
     text-indent: 1.5em;
 }
-menu{
-    padding-left: 0;
+
+footer{
+    background-image: linear-gradient(45deg,#0A1220, #0c2135,#0A1220);
+    max-width: 500px;
+    margin: auto;
+    margin-top: 0.5em;
+}
+
+footer p{    
     text-align: center;
-    user-select:none ;
+    padding: 5px;
 }
-nav{
-    display: inline-block;
-}
-a{
+
+footer a{
     color: var(--cor_destaque);
-    margin-right: 2em;
     text-decoration: none;
-}
-a:hover{
-    text-decoration: underline;
+    font-weight: bold;
+    font-style: oblique;
 }
