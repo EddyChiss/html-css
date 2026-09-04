@@ -1,0 +1,71 @@
+@charset "UTF-8";
+
+@media print {
+    body{
+        background-image: none;
+        background-color: white;
+        font-family: monospace;
+    }
+
+    main{
+        border: 1px solid black;
+        border-radius: .5em;
+        margin: auto;
+        margin-top: 2em;
+        margin-bottom: 55em;
+    }
+    
+    main h1{
+        color: black;
+        font-size: 2em;
+        text-shadow: none;
+        text-align: center;
+    }
+    body::after{
+        content: "Impressão feita em: https://eddychiss.github.io/html-css/exercicios/ex026/mq04/index.html"; 
+    }   
+    #phone, #tablet, #pc, #tv{
+        display:none;
+    }
+
+    #print{
+        display: block;
+        margin: auto;
+    }
+}
+
+@media  screen and (min-width: 768px) and (max-width: 1023px){
+    body{
+        background-image: url("../../imagens/back-tablet.jpg")
+    }
+
+    main{
+        max-width: 350px;
+    }
+
+    #tablet{
+        display:block
+    }
+
+    #phone{
+        display:none;
+    }
+}
+
+@media  screen and (min-width: 1024px) and (max-width: 1366px) {
+    body{
+        background-image: url("../../imagens/back-pc.jpg");
+    }
+    
+    main{
+        max-width: 500px;
+    }
+
+    #phone{
+        display: none;
+    }
+
+    #pc{
+        display: block;
+    }
+}
