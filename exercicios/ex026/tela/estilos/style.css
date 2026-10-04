@@ -25,7 +25,7 @@ body{
 main{
     margin: auto;
     margin-top: 1em;
-    user-select: none;
+  /*  user-select: none;*/
     width: 90vw;
 }
 
