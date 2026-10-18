@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex box ordem</title>
+    <style>
+        #conteiner{
+            background-color: lightcoral;
+            display: flex;
+            flex-flow: row wrap;
+            align-items: flex-start;
+            
+            justify-content: space-between;
+            height: 400px;
+            width: 80vw;
+        }
+        .caixa{
+
+            background-color: lightseagreen;
+            border:  1px solid black;
+            padding: 10px;
+            text-align: center;
+            flex-basis: 100px;
+        }
+        #c1{
+            order: 2;
+            align-self: center;
+        }
+        #c2{
+            order: 0;
+            align-self: flex-end;
+        }
+        #c3{
+            order: 3;
+            align-self: stretch;
+        }
+        #c4{
+            order: -1;
+        }
+        #c5{
+            order: 0;
+            align-self: center;
+        }
+        #c6{
+            order: 2;
+            align-self: flex-end;
+        }
+        #c7{
+            order: -1;
+            align-self: center;
+        }
+        #c8{
+            order: 1;
+        }
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <div class="caixa" id="c1">01</div>
+        <div class="caixa" id="c2">02</div>
+        <div class="caixa" id="c3">03</div>
+        <div class="caixa" id="c4">04</div>
+        <div class="caixa" id="c5">05</div>
+        <div class="caixa" id="c6">06</div>
+        <div class="caixa" id="c7">07</div>
+        <div class="caixa" id="c8">08</div>
+    </div>
+</body>
+</html>
