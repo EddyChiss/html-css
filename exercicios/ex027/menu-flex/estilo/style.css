@@ -1,13 +1,15 @@
 @charset "UTF-8";
 
 *{
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
+    
 }
 
 body{
-    font: lighter normal 1em "Arial", "Helvetica", "sans-serif";
+    background-color: bisque;
+    font: normal normal 1em "Arial", "Helvetica", "sans-serif";
 }
 
 header{
@@ -16,13 +18,13 @@ header{
     
     display: flex;
     align-items: center;
-    justify-content: space-between;
     flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 header > h1{
     color: white;
-    flex: 0 0 200px;
+    flex: 0 0 400px;
     margin-bottom: 10px;
     text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.712);
 }
@@ -53,19 +55,19 @@ main{
     display: flex;
     flex-flow: column wrap;
     justify-self: center;
-    width: 95vw;
+    width: 90vw;
 }
 
 main h1{
-    color: white;
     align-self: center;
+    color: rgb(0, 0, 0);
     flex: none;
     margin-bottom: .5em;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.712);
 }
 
 main h2{
-    color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
     padding: 10px;
     text-shadow: 1px 1px 1px rgb(0, 0, 0);
 }
@@ -73,4 +75,41 @@ main h2{
 p{
     padding: 10px;
     text-align: justify;
+}
+
+@media screen and (min-width:10px) and (max-width: 768px){
+    *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+    }
+
+    header{
+        display: flex;
+        flex-flow: column wrap;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    header > h1{
+        flex: 0 0 50px;
+    }
+
+    nav{
+        display: flex;
+        flex-flow: column wrap;
+    }
+
+    a{
+        border-radius: 1px;
+        margin-bottom:2px;
+        text-align: center;
+        width: 90vw;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    main{
+        max-width: 700px;
+    }
 }
